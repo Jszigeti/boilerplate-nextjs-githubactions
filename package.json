@@ -1,0 +1,51 @@
+{
+  "name": "nextjs-ci-cd-boilerplate",
+  "version": "0.0.1",
+  "description": "A Next.js boilerplate with GitHub Actions for automated CI/CD and deployment",
+  "keywords": [
+    "nextjs",
+    "boilerplate",
+    "github-actions",
+    "ci-cd",
+    "continuous-deployment",
+    "typescript"
+  ],
+  "author": "Jonas Szigeti",
+  "license": "UNLICENSED",
+  "main": "layout.tsx",
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write .",
+    "clean": "rm -rf .next node_modules package-lock.json && npm install",
+    "prebuild": "npm run lint && npm run format",
+    "postinstall": "echo '✅ Project dependencies installed successfully!'"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "next": "15.2.1"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@tailwindcss/postcss": "^4",
+    "tailwindcss": "^4",
+    "eslint": "^9",
+    "eslint-config-next": "15.2.1",
+    "@eslint/eslintrc": "^3",
+    "prettier": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jszigeti/nextjs-ci-cd-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Jszigeti/nextjs-ci-cd-boilerplate/issues"
+  },
+  "homepage": "https://github.com/Jszigeti/nextjs-ci-cd-boilerplate#readme"
+}
