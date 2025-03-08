@@ -1,0 +1,24 @@
+# Ignore unnecessary files
+Dockerfile
+.dockerignore
+
+# Ignore package managers' caches & dependencies
+node_modules
+npm-debug.log*
+yarn.lock
+yarn-error.log
+pnpm-lock.yaml
+
+# Ignore build output
+.next
+out
+
+# Ignore Git-related files
+.git
+.gitignore
+.github
+
+# Ignore system files & editor configs
+.DS_Store
+.vscode
+.idea
